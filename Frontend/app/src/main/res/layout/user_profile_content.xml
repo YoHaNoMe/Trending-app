@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/profile_update_name_textField"
+        style="@style/TextFieldOutlineColor"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="128dp"
+        android:layout_marginHorizontal="32dp"
+        android:hint="@string/name_hint"
+        android:textColorHint="@color/colorWhite50"
+        app:hintTextColor="@color/colorWhite"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:startIconDrawable="@drawable/ic_baseline_person_24"
+        app:startIconTint="@color/colorWhite">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:inputType="textPersonName" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/profile_update_user_email_textField"
+        style="@style/TextFieldOutlineColor"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:hint="@string/email_hint"
+        android:textColorHint="@color/colorWhite50"
+        app:hintTextColor="@color/colorWhite"
+        app:layout_constraintLeft_toLeftOf="@id/profile_update_name_textField"
+        app:layout_constraintRight_toRightOf="@id/profile_update_name_textField"
+        app:layout_constraintTop_toBottomOf="@id/profile_update_name_textField"
+        app:startIconDrawable="@drawable/ic_baseline_email_24"
+        app:startIconTint="@color/colorWhite">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:inputType="textPersonName" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/profile_update_user_password_textField"
+        style="@style/TextFieldOutlineColor"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:hint="@string/password_hint"
+        android:textColorHint="@color/colorWhite50"
+        app:endIconMode="password_toggle"
+        app:endIconTint="@color/colorWhite"
+        app:hintTextColor="@color/colorWhite"
+        app:layout_constraintEnd_toEndOf="@+id/profile_update_user_email_textField"
+        app:layout_constraintStart_toStartOf="@+id/profile_update_user_email_textField"
+        app:layout_constraintTop_toBottomOf="@id/profile_update_user_email_textField"
+        app:startIconDrawable="@drawable/ic_baseline_lock_24"
+        app:startIconTint="@color/colorWhite">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:inputType="textPassword" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/profile_update_user_confirm_password_textField"
+        style="@style/TextFieldOutlineColor"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:hint="@string/confirm_password_hint"
+        android:textColorHint="@color/colorWhite50"
+        app:endIconMode="password_toggle"
+        app:endIconTint="@color/colorWhite"
+        app:hintTextColor="@color/colorWhite"
+        app:layout_constraintEnd_toEndOf="@+id/profile_update_user_password_textField"
+        app:layout_constraintStart_toStartOf="@+id/profile_update_user_password_textField"
+        app:layout_constraintTop_toBottomOf="@id/profile_update_user_password_textField"
+        app:startIconDrawable="@drawable/ic_baseline_lock_24"
+        app:startIconTint="@color/colorWhite">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:inputType="textPassword" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/profile_update_user_update_button"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:background="@drawable/sign_in_up_button_background"
+        android:text="@string/update_text"
+        android:textAllCaps="false"
+        android:textSize="20sp"
+        app:layout_constraintLeft_toLeftOf="@id/profile_update_user_confirm_password_textField"
+        app:layout_constraintRight_toRightOf="@id/profile_update_user_confirm_password_textField"
+        app:layout_constraintTop_toBottomOf="@id/profile_update_user_confirm_password_textField" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

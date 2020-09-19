@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/register_user_name_textField"
+        style="@style/TextFieldOutlineColor"
+        android:layout_width="0dp"
+        android:layout_marginTop="128dp"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="20dp"
+        android:hint="Username"
+        android:textColorHint="@color/colorWhite50"
+        app:hintTextColor="@color/colorWhite"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:startIconDrawable="@drawable/ic_baseline_person_24"
+        app:startIconTint="@color/colorWhite">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:inputType="textPersonName" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/register_name_textField"
+        style="@style/TextFieldOutlineColor"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:hint="Name"
+        android:textColorHint="@color/colorWhite50"
+        app:hintTextColor="@color/colorWhite"
+        app:layout_constraintLeft_toLeftOf="@id/register_user_name_textField"
+        app:layout_constraintRight_toRightOf="@id/register_user_name_textField"
+        app:layout_constraintTop_toBottomOf="@id/register_user_name_textField"
+        app:startIconDrawable="@drawable/ic_baseline_person_24"
+        app:startIconTint="@color/colorWhite">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:inputType="textPersonName" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/register_user_email_textField"
+        style="@style/TextFieldOutlineColor"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:hint="Email"
+        android:textColorHint="@color/colorWhite50"
+        app:hintTextColor="@color/colorWhite"
+        app:layout_constraintLeft_toLeftOf="@id/register_name_textField"
+        app:layout_constraintRight_toRightOf="@id/register_name_textField"
+        app:layout_constraintTop_toBottomOf="@id/register_name_textField"
+        app:startIconDrawable="@drawable/ic_baseline_email_24"
+        app:startIconTint="@color/colorWhite">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:inputType="textPersonName" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/register_user_password_textField"
+        style="@style/TextFieldOutlineColor"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:hint="Password"
+        android:textColorHint="@color/colorWhite50"
+        app:endIconMode="password_toggle"
+        app:endIconTint="@color/colorWhite"
+        app:hintTextColor="@color/colorWhite"
+        app:layout_constraintEnd_toEndOf="@+id/register_user_email_textField"
+        app:layout_constraintStart_toStartOf="@+id/register_user_email_textField"
+        app:layout_constraintTop_toBottomOf="@id/register_user_email_textField"
+        app:startIconDrawable="@drawable/ic_baseline_lock_24"
+        app:startIconTint="@color/colorWhite">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:inputType="textPassword" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/register_user_confirm_password_textField"
+        style="@style/TextFieldOutlineColor"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:hint="Confirm Password"
+        android:textColorHint="@color/colorWhite50"
+        app:endIconMode="password_toggle"
+        app:endIconTint="@color/colorWhite"
+        app:hintTextColor="@color/colorWhite"
+        app:layout_constraintEnd_toEndOf="@+id/register_user_password_textField"
+        app:layout_constraintStart_toStartOf="@+id/register_user_password_textField"
+        app:layout_constraintTop_toBottomOf="@id/register_user_password_textField"
+        app:startIconDrawable="@drawable/ic_baseline_lock_24"
+        app:startIconTint="@color/colorWhite">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:inputType="textPassword" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/register_user_sign_up_button"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:background="@drawable/sign_in_up_button_background"
+        android:text="Sign Up"
+        android:textAllCaps="false"
+        android:textSize="20sp"
+        app:layout_constraintLeft_toLeftOf="@id/register_user_confirm_password_textField"
+        app:layout_constraintRight_toRightOf="@id/register_user_confirm_password_textField"
+        app:layout_constraintTop_toBottomOf="@id/register_user_confirm_password_textField" />
+
+    <TextView
+        android:id="@+id/register_user_already_have_an_account"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:gravity="center_horizontal"
+        android:text="Already have an account?"
+        android:textColor="@color/colorWhite50"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="@id/register_user_sign_up_button"
+        app:layout_constraintStart_toStartOf="@id/register_user_sign_up_button"
+        app:layout_constraintTop_toBottomOf="@id/register_user_sign_up_button"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
